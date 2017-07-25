@@ -1,0 +1,27 @@
+<p>
+  demo works!
+</p>
+<p>Here we will test the String Binding of Interpolation : {{a}}</p>
+
+<button (click)="clikcedFun()">Click Me</button>
+
+<input type="text" [(ngModel)]=str>
+
+<h1>{{str}}</h1>
+
+<input type="text" #input1 (keyup)="0">
+ 
+<h1>{{input1.value}}</h1>
+
+<h1> Here we will Test built in the pipe</h1>
+<p>currency pipe: {{cur | currency:'USD':true}}</p>
+<p>uppercase pipe: {{a | uppercase}}</p>
+<p>lowercase pipe: {{a | lowercase}}</p>
+
+<h1>here we will test the user define pipe</h1>
+
+<p>Initial value of cur befor filter:{{cur}}</p>
+<p>The Value of cur after filter:{{cur|double }}</p>
+
+<!-- <p> The Value of cur after filter:{{cur| productSearch:"Akki"}}</p> -->
+

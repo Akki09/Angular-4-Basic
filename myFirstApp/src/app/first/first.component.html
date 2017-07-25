@@ -1,0 +1,26 @@
+<p>
+  first works!
+</p>
+
+<h1>Hear we will show the array list </h1>
+
+<ul >
+  <li *ngFor= "let item of arr;let i = index">
+    {{item}} Its Index is : {{i}}</li>
+</ul>
+
+<h1>---Product Detais---</h1>
+
+<input #input1 type="text" name="userName" placeholder="search" (keyup)="0"/>
+
+<!-- <ul *ngFor= "let i = index;let product of productDetails|productSearch:input1.value"> -->
+
+ <ul *ngFor= "let i = index;let product of productDetails">
+  <li>{{product.pId}}</li>
+  <li>{{product.pName}}</li>
+  <li>{{product.pDetail}}</li>
+  <li>{{product.pPrice}}</li>
+      <button (click)="delClick(i)">Delete</button>
+</ul> 
+
+
